@@ -55,7 +55,7 @@ export default function Home() {
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1, ease: "easeOut" }}
-  className="text-6xl md:text-6xl almarai-bold mb-30 leading-tight  text-black"
+  className="text-4xl md:text-6xl almarai-bold mb-30 leading-tight text-black"
 >
   <span>اكتشف، جرّب، وابتكر في</span>
   <br />
@@ -65,7 +65,7 @@ export default function Home() {
     transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
     className="bg-gradient-to-r from-primaryDark via-primary to-primaryDark bg-[length:200%_200%] bg-clip-text text-transparent inline-block pb-6"
   >
-    بوابة المطورين 
+    بوابة المطورين
   </motion.span>
 </motion.h2>
 

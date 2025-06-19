@@ -10,7 +10,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center gap-4" dir="ltr">
           <a href="/" className="flex items-center gap-4">
-            <h1 className="text-2xl almarai-bold text-black">بوابة المطورين</h1>
+          <h1 className="text-xl md:text-2xl almarai-bold text-black">بوابة المطورين</h1>
             <img
               src="/src/assets/sdaia-logo.png"
               alt="SDAIA Logo"
