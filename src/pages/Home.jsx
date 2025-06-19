@@ -1,3 +1,5 @@
+import { Box, Puzzle, PlugZap, FileText } from "lucide-react";
+
 export default function Home() {
     return (
         <>
@@ -99,9 +101,9 @@ export default function Home() {
                         <a href="/tools" className="group relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <div className="relative">
-                                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-2xl">📦</span>
-                                </div>
+                            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+  <Box className="w-8 h-8 text-white" />
+</div>
                                 <h4 className="text-2xl almarai-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors">أدوات وبيئات التطوير</h4>
                                 <p className="text-gray-600 text-lg leading-relaxed group-hover:text-gray-700 transition-colors">
                                     تعرف على الأدوات المهمة للمطورين الجدد والمحترفين في رحلتك التطويرية.
@@ -118,9 +120,10 @@ export default function Home() {
                         <a href="/components" className="group relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                             <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <div className="relative">
-                                <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-2xl">🧩</span>
-                                </div>
+                            <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-primary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+  <Puzzle className="w-8 h-8 text-white" />
+</div>
+
                                 <h4 className="text-2xl almarai-semibold text-purple-700 mb-4 group-hover:text-purple-800 transition-colors">مكتبة المكونات</h4>
                                 <p className="text-gray-600 text-lg leading-relaxed group-hover:text-gray-700 transition-colors">
                                     مكونات جاهزة وقابلة لإعادة الاستخدام مع عرض حي وأكواد تفاعلية.
@@ -137,9 +140,11 @@ export default function Home() {
                         <a href="/apis" className="group relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                             <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <div className="relative">
-                                <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-2xl">🔌</span>
-                                </div>
+                            <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+  <PlugZap className="w-8 h-8 text-white" />
+</div>
+
+
                                 <h4 className="text-2xl almarai-semibold text-green-700 mb-4 group-hover:text-green-800 transition-colors">مصادر APIs</h4>
                                 <p className="text-gray-600 text-lg leading-relaxed group-hover:text-gray-700 transition-colors">
                                     اكتشف مصادر APIs المتنوعة وروابط التوثيق الشاملة الخاصة بها.
@@ -156,9 +161,9 @@ export default function Home() {
                         <a href="/survey" className="group relative p-8 bg-white border border-gray-100 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 hover:scale-105 hover:-translate-y-2">
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <div className="relative">
-                                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-2xl">📝</span>
-                                </div>
+                            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+  <FileText className="w-8 h-8 text-white" />
+</div>
                                 <h4 className="text-2xl almarai-semibold text-blue-700 mb-4 group-hover:text-blue-800 transition-colors">استطلاع رأي</h4>
                                 <p className="text-gray-600 text-lg leading-relaxed group-hover:text-gray-700 transition-colors">
                                     ساهم في تطوير البوابة وتحسينها من خلال تعبئة الاستبيان التفاعلي.
