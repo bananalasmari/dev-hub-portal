@@ -33,7 +33,7 @@ export default function Footer() {
   
           <div className="text-center">
             <p className="text-gray-600 almarai-regular mb-4">
-              منصة شاملة للمطورين العرب لاكتشاف أحدث الأدوات والتقنيات
+              منصة شاملة للمطورين  لاكتشاف أحدث الأدوات والتقنيات
             </p>
             <div className="border-t border-gray-200 pt-8">
               <p className="text-gray-500 text-sm almarai-regular">
