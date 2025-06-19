@@ -12,7 +12,7 @@ export default function Header() {
           <a href="/" className="flex items-center gap-4">
           <h1 className="text-xl md:text-2xl almarai-bold text-black">بوابة المطورين</h1>
             <img
-              src="/assets/sdaia-logo.png"
+              src="/sdaia-logo.png"
               alt="SDAIA Logo"
               className="w-50 h-14 object-contain border-l pl-4 border-gray-200"
             />

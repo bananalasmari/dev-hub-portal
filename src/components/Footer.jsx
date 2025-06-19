@@ -5,7 +5,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex items-center mb-6 md:mb-0">
               <img
-                src="/assets/sdaia-logo.png"
+                src="/sdaia-logo.png"
                 alt="SDAIA Logo"
                 className="w-30 h-14 object-contain border-l px-4 border-gray-300"
               />
