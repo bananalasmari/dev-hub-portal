@@ -2,8 +2,11 @@ import { Box, Puzzle, PlugZap, FileText } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import WizardSteps from "../components/WizardSteps";
 
 export default function Home() {
+    const [showWizard, setShowWizard] = useState(false);
     return (
         <>
             <style>{`
@@ -74,9 +77,12 @@ export default function Home() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                            <button className="group relative px-8 py-4 bg-primary rounded-2xl almarai-semibold text-lg text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                <span className="relative z-10">ابدأ الاستكشاف</span>
-                            </button>
+                        <button
+  onClick={() => setShowWizard(true)}
+  className="group relative px-8 py-4 bg-primary rounded-2xl almarai-semibold text-lg text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+>
+  <span className="relative z-10">ابدأ الاستكشاف</span>
+</button>
                             <button className="group px-8 py-4 bg-white border-2 border-primary rounded-2xl almarai-semibold text-lg text-primary hover:bg-primary/10 hover:border-primaryDark transition-all duration-300 hover:scale-105">
                                 تعرف على المزيد
                             </button>
@@ -228,9 +234,17 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-
+                
+                {showWizard && (
+  <div className="fixed inset-0 bg-black/40 flex justify-center items-center z-50">
+    <div className="bg-white p-8 rounded-2xl shadow-xl max-w-lg w-full">
+      <WizardSteps onClose={() => setShowWizard(false)} />
+    </div>
+  </div>
+)}
                 <Footer />
             </div>
         </>
     );
 }
+

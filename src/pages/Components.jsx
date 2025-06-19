@@ -51,7 +51,7 @@ export default function Components() {
         </section>
 
          {/* Components List */}
-      <section className="relative max-w-7xl mx-auto px-6 ">
+      <section className="relative max-w-7xl mx-auto px-6 mb-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Cards */}
           {[
@@ -79,8 +79,9 @@ export default function Components() {
           ))}
         </div>
       </section>
-      </div>
       <Footer />
+
+      </div>
 
     </>
   );
