@@ -33,63 +33,53 @@ export default function Home() {
                 </div>
 
                 {/* Header */}
-                <header className="relative bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm sticky top-0 z-50">
-                    <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
+                <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
+                    <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
                         <div className="flex items-center gap-4" dir="ltr">
-
-                        <h1 className="text-2xl almarai-bold text-blackish">
-  بوابة المطورين
-</h1>
+                            <h1 className="text-2xl almarai-bold text-black">بوابة المطورين</h1>
                             <img
                                 src="/src/assets/sdaia-logo.png"
                                 alt="SDAIA Logo"
-                                className="w-50 h-14 object-contain border-l pl-4 border-gray-300"
+                                className="w-50 h-14 object-contain border-l pl-4 border-gray-200"
                             />
                         </div>
                         <nav className="flex gap-8 mt-4 md:mt-0 text-sm almarai-semibold">
-                            <a href="/tools" className="relative group px-4 py-2 rounded-full transition-all duration-300 hover:bg-blue-50">
-                                <span className="relative z-10 text-blue-700 group-hover:text-blue-800 transition-colors">الأدوات</span>
-                            </a>
-                            <a href="/components" className="relative group px-4 py-2 rounded-full transition-all duration-300 hover:bg-purple-50">
-                                <span className="relative z-10 text-purple-700 group-hover:text-purple-800 transition-colors">المكونات</span>
-                            </a>
-                            <a href="/apis" className="relative group px-4 py-2 rounded-full transition-all duration-300 hover:bg-green-50">
-                                <span className="relative z-10 text-green-700 group-hover:text-green-800 transition-colors">APIs</span>
-                            </a>
-                            <a href="/survey" className="relative group px-4 py-2 rounded-full transition-all duration-300 hover:bg-blue-50">
-                                <span className="relative z-10 text-blue-700 group-hover:text-blue-800 transition-colors">الاستبيان</span>
-                            </a>
+                            <a href="/tools" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الأدوات</a>
+                            <a href="/components" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">المكونات</a>
+                            <a href="/apis" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">APIs</a>
+                            <a href="/survey" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الاستبيان</a>
                         </nav>
                     </div>
                 </header>
 
                 {/* Hero */}
-                <section className="relative py-32 text-center overflow-hidden bg-gradient-to-b from-blue-50 via-white to-purple-50">
+                <section className="relative py-32 text-center overflow-hidden bg-gradient-to-b from-primary/10 via-primary/5 to-white">
                     <div className="relative max-w-5xl mx-auto px-6">
                         <div className="mb-8 inline-block">
-                            <div className="flex items-center justify-center w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 rounded-2xl shadow-lg animate-pulse">
+                            <div className="flex items-center justify-center w-20 h-20 mx-auto mb-6 bg-primary rounded-2xl shadow-lg animate-pulse">
                                 <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                 </svg>
                             </div>
                         </div>
-                        <h2 className="text-6xl md:text-7xl almarai-bold mb-8 leading-tight">
-                            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-green-600 bg-clip-text text-transparent">
-                                مرحباً بك في
-                            </span>
+
+                        <h2 className="text-6xl md:text-7xl almarai-bold mb-8 leading-tight text-black">
+                            <span>مرحباً بك في</span>
                             <br />
-                            <span className="bg-gradient-to-r from-green-600 via-blue-600 to-primary bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-primaryDark via-primary to-primaryDark bg-clip-text text-transparent">
                                 بوابة المطورين
                             </span>
                         </h2>
+
                         <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
                             هذه البوابة تم تصميمها لتسهيل انضمام المطورين، واكتشاف الأدوات والمكونات وواجهات البرمجة الأكثر فاعلية.
                         </p>
+
                         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                            <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-primary rounded-2xl almarai-semibold text-lg text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                            <button className="group relative px-8 py-4 bg-primary rounded-2xl almarai-semibold text-lg text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                                 <span className="relative z-10">ابدأ الاستكشاف</span>
                             </button>
-                            <button className="group px-8 py-4 bg-white border-2 border-gray-200 rounded-2xl almarai-semibold text-lg text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300 hover:scale-105">
+                            <button className="group px-8 py-4 bg-white border-2 border-primary rounded-2xl almarai-semibold text-lg text-primary hover:bg-primary/10 hover:border-primaryDark transition-all duration-300 hover:scale-105">
                                 تعرف على المزيد
                             </button>
                         </div>
@@ -99,7 +89,7 @@ export default function Home() {
                 {/* Sections Grid */}
                 <section className="relative max-w-7xl mx-auto px-6 py-20">
                     <div className="text-center mb-16">
-                        <h3 className="text-4xl almarai-bold bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent mb-4">
+                        <h3 className="text-4xl almarai-bold bg-gradient-to-r from-primaryDark to-primary bg-clip-text text-transparent mb-4">
                             استكشف الأقسام
                         </h3>
                         <p className="text-gray-600 text-lg">اختر القسم الذي يناسب احتياجاتك التطويرية</p>
@@ -189,7 +179,7 @@ export default function Home() {
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="bg-white/80 backdrop-blur-md rounded-3xl border border-gray-100 p-12 shadow-lg">
                             <div className="text-center mb-12">
-                                <h3 className="text-3xl almarai-bold bg-gradient-to-r from-blue-600 to-primary bg-clip-text text-transparent mb-4">
+                                <h3 className="text-3xl almarai-bold bg-gradient-to-r from-primaryDark to-primary bg-clip-text text-transparent mb-4">
                                     إحصائيات البوابة
                                 </h3>
                                 <p className="text-gray-600">نفخر بالأرقام التي حققناها في خدمة المطورين</p>
@@ -219,9 +209,9 @@ export default function Home() {
                 {/* Newsletter Section */}
                 <section className="relative py-20">
                     <div className="max-w-4xl mx-auto px-6 text-center">
-                        <div className="bg-gradient-to-r from-blue-600 to-primary rounded-3xl p-12 text-white">
+                        <div className="bg-gradient-to-r from-primary via-blueMain to-greenMain rounded-3xl p-12 text-white shadow-xl">
                             <h3 className="text-3xl almarai-bold mb-4">ابق على اطلاع بآخر التحديثات</h3>
-                            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+                            <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
                                 اشترك في نشرتنا الإخبارية لتصلك أحدث الأدوات والمكونات والتقنيات المتاحة للمطورين
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -230,7 +220,7 @@ export default function Home() {
                                     placeholder="البريد الإلكتروني"
                                     className="flex-1 px-6 py-3 rounded-xl text-gray-900 almarai-regular focus:outline-none focus:ring-2 focus:ring-white"
                                 />
-                                <button className="px-8 py-3 bg-white text-blue-600 rounded-xl almarai-semibold hover:bg-gray-50 transition-colors">
+                                <button className="px-8 py-3 bg-white text-primary rounded-xl almarai-semibold hover:bg-gray-50 hover:scale-105 transition-all duration-300">
                                     اشتراك
                                 </button>
                             </div>
@@ -243,16 +233,16 @@ export default function Home() {
                     <div className="max-w-6xl mx-auto px-6">
                         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
                             <div className="flex items-center mb-6 md:mb-0">
-                              
-                     
-                            <img
-                                src="/src/assets/sdaia-logo.png"
-                                alt="SDAIA Logo"
-                                className="w-30 h-14 object-contain border-l px-4 border-gray-300"
-                            />
-                               <h1 className="text-1xl almarai-bold px-4 text-blackish">
-  بوابة المطورين
-</h1>
+
+
+                                <img
+                                    src="/src/assets/sdaia-logo.png"
+                                    alt="SDAIA Logo"
+                                    className="w-30 h-14 object-contain border-l px-4 border-gray-300"
+                                />
+                                <h1 className="text-1xl almarai-bold px-4 text-blackish">
+                                    بوابة المطورين
+                                </h1>
                             </div>
                             <div className="flex space-x-6 space-x-reverse">
                                 <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors">
