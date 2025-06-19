@@ -1,4 +1,6 @@
 import { Box, Puzzle, PlugZap, FileText } from "lucide-react";
+import Header from "../components/Header";
+import { motion } from "framer-motion";
 
 export default function Home() {
     return (
@@ -35,24 +37,7 @@ export default function Home() {
                 </div>
 
                 {/* Header */}
-                <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
-                    <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
-                        <div className="flex items-center gap-4" dir="ltr">
-                            <h1 className="text-2xl almarai-bold text-black">بوابة المطورين</h1>
-                            <img
-                                src="/src/assets/sdaia-logo.png"
-                                alt="SDAIA Logo"
-                                className="w-50 h-14 object-contain border-l pl-4 border-gray-200"
-                            />
-                        </div>
-                        <nav className="flex gap-8 mt-4 md:mt-0 text-sm almarai-semibold">
-                            <a href="/tools" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الأدوات</a>
-                            <a href="/components" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">المكونات</a>
-                            <a href="/apis" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">APIs</a>
-                            <a href="/survey" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الاستبيان</a>
-                        </nav>
-                    </div>
-                </header>
+                <Header />
 
                 {/* Hero */}
                 <section className="relative py-32 text-center overflow-hidden bg-gradient-to-b from-primary/10 via-primary/5 to-white">
@@ -65,13 +50,23 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <h2 className="text-6xl md:text-7xl almarai-bold mb-8 leading-tight text-black">
-                            <span>مرحباً بك في</span>
-                            <br />
-                            <span className="bg-gradient-to-r from-primaryDark via-primary to-primaryDark bg-clip-text text-transparent">
-                                بوابة المطورين
-                            </span>
-                        </h2>
+                        <motion.h2
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+  className="text-6xl md:text-6xl almarai-bold mb-8 leading-tight  text-black"
+>
+  <span>اكتشف، جرّب، وابتكر في</span>
+  <br />
+  <motion.span
+    initial={{ backgroundPosition: "0% 50%" }}
+    animate={{ backgroundPosition: "100% 50%" }}
+    transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+    className="bg-gradient-to-r from-primaryDark via-primary to-primaryDark bg-[length:200%_200%] bg-clip-text text-transparent inline-block pb-4"
+  >
+    مركز المطورين
+  </motion.span>
+</motion.h2>
 
                         <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
                             هذه البوابة تم تصميمها لتسهيل انضمام المطورين، واكتشاف الأدوات والمكونات وواجهات البرمجة الأكثر فاعلية.

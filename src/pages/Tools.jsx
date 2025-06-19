@@ -1,4 +1,5 @@
 import { Wrench, TerminalSquare, MonitorPlay, BookOpenCheck } from "lucide-react";
+import Header from "../components/Header";
 
 export default function Tools() {
   return (
@@ -29,30 +30,12 @@ export default function Tools() {
 
       <div className="bg-white min-h-screen text-gray-900 almarai-regular overflow-hidden" dir="rtl">
       <div className="bg-white min-h-screen text-gray-900 almarai-regular overflow-hidden" dir="rtl">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-4" dir="ltr">
-            <h1 className="text-2xl almarai-bold text-black">بوابة المطورين</h1>
-            <img
-              src="/src/assets/sdaia-logo.png"
-              alt="SDAIA Logo"
-              className="w-50 h-14 object-contain border-l pl-4 border-gray-200"
-            />
-          </div>
-          <nav className="flex gap-8 mt-4 md:mt-0 text-sm almarai-semibold">
-            <a href="/tools" className="px-4 py-2 rounded-full bg-primary text-white">الأدوات</a>
-            <a href="/components" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">المكونات</a>
-            <a href="/apis" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">APIs</a>
-            <a href="/survey" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الاستبيان</a>
-          </nav>
-        </div>
-      </header>
-
+        {/* Header */}
+                    <Header />
       {/* Page Title */}
       <section className="relative py-24 text-center bg-gradient-to-b from-primary/10 via-primary/5 to-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-5xl almarai-bold mb-6 bg-gradient-to-r from-primaryDark to-primary bg-clip-text text-transparent">
+          <h2 className="text-5xl almarai-bold mb-6 bg-gradient-to-r from-primaryDark to-primary bg-clip-text text-transparent pb-3">
             أدوات وبيئات التطوير
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
