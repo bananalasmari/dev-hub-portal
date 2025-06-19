@@ -7,6 +7,8 @@ import {
   MoveUpRight,
   Component
 } from "lucide-react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Components() {
   return (
@@ -37,25 +39,7 @@ export default function Components() {
 
       <div className="bg-white min-h-screen text-gray-900 almarai-regular" dir="rtl">
         {/* Header */}
-        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center gap-4" dir="ltr">
-              <h1 className="text-2xl almarai-bold text-black">بوابة المطورين</h1>
-              <img
-                src="/src/assets/sdaia-logo.png"
-                alt="SDAIA Logo"
-                className="w-50 h-14 object-contain border-l pl-4 border-gray-200"
-              />
-            </div>
-            <nav className="flex gap-8 mt-4 md:mt-0 text-sm almarai-semibold">
-              <a href="/tools" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الأدوات</a>
-              <a href="/components" className="px-4 py-2 rounded-full bg-primary text-white">المكونات</a>
-              <a href="/apis" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">APIs</a>
-              <a href="/survey" className="px-4 py-2 rounded-full hover:bg-gray-100 transition-colors">الاستبيان</a>
-            </nav>
-          </div>
-        </header>
-
+                                 <Header />
         {/* Hero */}
         <section className="py-20 bg-gradient-to-b from-primary/10 via-primary/5 to-white text-center ">
           <h2 className="text-5xl almarai-bold bg-gradient-to-r from-primaryDark to-primary bg-clip-text text-transparent mb-6 pb-4">
@@ -96,6 +80,8 @@ export default function Components() {
         </div>
       </section>
       </div>
+      <Footer />
+
     </>
   );
 }

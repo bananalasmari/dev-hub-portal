@@ -1,5 +1,6 @@
 import { MessageSquareQuote, SendHorizonal } from "lucide-react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Survey() {
   return (
@@ -105,6 +106,7 @@ export default function Survey() {
             </div>
           </form>
         </section>
+         <Footer />
       </div>
     </>
   );

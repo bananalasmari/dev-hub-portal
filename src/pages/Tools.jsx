@@ -1,5 +1,6 @@
 import { Wrench, TerminalSquare, MonitorPlay, BookOpenCheck } from "lucide-react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function Tools() {
   return (
@@ -101,7 +102,10 @@ export default function Tools() {
         </div>
       </section>
     </div>
+    <Footer />
+
       </div>
+
     </>
   );
 }
